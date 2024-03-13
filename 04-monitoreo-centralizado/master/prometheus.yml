@@ -12,19 +12,19 @@ scrape_configs:
         - '{__name__=~".+"}'
     static_configs:
       # ------------------------------------- #
-      - targets: [ '192.168.0.151:9090']  # DEV
+      - targets: [ '192.168.0.80:9090']  # DEV
         labels:
           pais: AR
           entorno: DEV
-          cliente: caosbinario
-          hostname: dev-caosbinario-ar
+          cliente: cliente
+          hostname: dev-cliente-ar
       # ------------------------------------- #
-      - targets: [ '192.168.0.152:9090']  # QA
+      - targets: [ '192.168.0.40:9090']  # QA
         labels:
           pais: AR
           entorno: QA
-          cliente: caosbinario
-          hostname: qa-caosbinario-ar
+          cliente: cliente
+          hostname: qa-cliente-ar
       # ------------------------------------- #
 
       
