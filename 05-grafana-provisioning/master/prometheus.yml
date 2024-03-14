@@ -11,10 +11,19 @@ scrape_configs:
       'match[]':
         - '{__name__=~".+"}'
     static_configs:
+      # ------------------------------------- #
       - targets: [ '192.168.0.80:9090']  # DEV
         labels:
           pais: AR
           entorno: DEV
-          cliente: agente
-          hostname: dev-agente-ar
+          cliente: cliente
+          hostname: dev-cliente-ar
+      # ------------------------------------- #
+      - targets: [ '192.168.0.40:9090']  # QA
+        labels:
+          pais: AR
+          entorno: QA
+          cliente: cliente
+          hostname: qa-cliente-ar
+      # ------------------------------------- #
       
