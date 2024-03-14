@@ -11,10 +11,10 @@ scrape_configs:
       'match[]':
         - '{__name__=~".+"}'
     static_configs:
-      - targets: [ '192.168.56.102:9090']  # DEV
+      - targets: [ '192.168.0.80:9090']  # DEV
         labels:
           pais: AR
           entorno: DEV
-          cliente: caosbinario
-          hostname: dev-caosbinario-ar
+          cliente: agente
+          hostname: dev-agente-ar
       
