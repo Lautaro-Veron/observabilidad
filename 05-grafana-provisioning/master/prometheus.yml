@@ -26,4 +26,11 @@ scrape_configs:
           cliente: cliente
           hostname: qa-cliente-ar
       # ------------------------------------- #
+      - targets: [ '192.168.0.103:9090']  # QA2
+        labels:
+          pais: AR
+          entorno: QA2
+          cliente: cliente
+          hostname: qa2-cliente-ar
+      # ------------------------------------- #
       
